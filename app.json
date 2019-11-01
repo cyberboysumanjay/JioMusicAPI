@@ -1,0 +1,13 @@
+{
+  "name": "JioMusicAPI",
+  "author": "Sumanjay",
+  "description": "Unofficial API of JioMusic.",
+  "keywords": [
+    "Flask",
+    "Python",
+    "API",
+    "JioMusic",
+    "Music"
+  ],
+  "repository": "https://github.com/cyberboysumanjay/JioMusicAPI"
+}
