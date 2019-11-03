@@ -67,14 +67,14 @@ def song_search(query):
         print("Error Code "+results['messageCode'])
     
 def playlist_details(id):
-    base_url="http://beatsapi.media.jio.com/v2_1/beats-api/jio/src/response/listsongs/playlistsongs/"+id
+    base_url="http://beatsapi.media.jio.com/v2_1/beats-api/jio/src/response/listsongs/playlistsongs/"+str(id)
     results=requests.get(base_url).json()
     data={}
     if (results['messageCode']==200):
         return results["result"]["data"]
         
 def album_details(id):
-    base_url="http://beatsapi.media.jio.com/v2_1/beats-api/jio/src/response/albumsongs/albumid/"+id
+    base_url="http://beatsapi.media.jio.com/v2_1/beats-api/jio/src/response/albumsongs/albumid/"+str(id)
     results=requests.get(base_url).json()
     data={}
     if (results['messageCode']==200):
@@ -82,5 +82,5 @@ def album_details(id):
         
 def get_stream_link(id,bitrate=320):
     _id=id.split("_")
-    url="http://jiobeats.cdn.jio.com/mod/_definst_/mp4:hdindiamusic/audiofiles/"+_id[0]+'/'+_id[1]+'/'+id+'_'+str(bitrate)+".mp4/playlist.m3u8"
+    url="http://jiobeats.cdn.jio.com/mod/_definst_/mp4:hdindiamusic/audiofiles/"+_id[0]+'/'+_id[1]+'/'+str(id)+'_'+str(bitrate)+".mp4/playlist.m3u8"
     return url    
