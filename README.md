@@ -1,5 +1,12 @@
 ## JioMusic API
 
+
+### Show some :heart: and :star: the repo to support the project
+
+[![GitHub stars](https://img.shields.io/github/stars/cyberboysumanjay/jiomusicapi.svg?style=social&label=Star)](https://github.com/cyberboysumanjay/JioMusicAPI)
+![GitHub followers](https://img.shields.io/github/followers/cyberboysumanjay.svg?style=social&label=Follow)
+[![Twitter Follow](https://img.shields.io/twitter/follow/cyberboysj.svg?style=social)](https://twitter.com/CyberboySj)
+
 #### JioMusic API written in Python using Flask  
 ![JioMusic](https://telegra.ph/file/a053512b3f86018f275a2.png)
  ---
