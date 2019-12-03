@@ -36,8 +36,8 @@ def song_search(query):
             album_data["songCount"]=album["songCount"]
             a_data=album_details(album['id'])
             album_data["label"]=a_data["header"]["label"]
-            album_data["songs"]=a_data["list"]
-            for song in album_data["songs"]:
+            album_data["album_songs"]=a_data["list"]
+            for song in album_data["album_songs"]:
                 song["image"]= base_imageurl+str(song["image"]).replace('400x400','800x800')
                 song["url"]=get_stream_link(song["id"])
             a_result.append(album_data)
@@ -56,8 +56,8 @@ def song_search(query):
             playlist_data["songCount"]=playlist["songCount"]
             p_data=playlist_details(playlist['id'])
             playlist_data["label"]=p_data["header"]["label"]
-            playlist_data["songs"]=p_data["list"]
-            for song in playlist_data["songs"]:
+            playlist_data["playlist_songs"]=p_data["list"]
+            for song in playlist_data["playlist_songs"]:
                 song["image"]= base_imageurl+str(song["image"]).replace('400x400','800x800')
                 song["url"]=get_stream_link(song["id"])
             p_result.append(playlist_data)
@@ -65,22 +65,22 @@ def song_search(query):
         return (data)
     else:
         print("Error Code "+results['messageCode'])
-    
+
 def playlist_details(id):
     base_url="http://beatsapi.media.jio.com/v2_1/beats-api/jio/src/response/listsongs/playlistsongs/"+str(id)
     results=requests.get(base_url).json()
     data={}
     if (results['messageCode']==200):
         return results["result"]["data"]
-        
+
 def album_details(id):
     base_url="http://beatsapi.media.jio.com/v2_1/beats-api/jio/src/response/albumsongs/albumid/"+str(id)
     results=requests.get(base_url).json()
     data={}
     if (results['messageCode']==200):
         return results["result"]["data"]
-        
+
 def get_stream_link(id,bitrate=320):
     _id=id.split("_")
     url="http://jiobeats.cdn.jio.com/mod/_definst_/mp4:hdindiamusic/audiofiles/"+_id[0]+'/'+_id[1]+'/'+str(id)+'_'+str(bitrate)+".mp4/playlist.m3u8"
-    return url    
+    return url
