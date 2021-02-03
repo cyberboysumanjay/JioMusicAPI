@@ -1,4 +1,4 @@
-## JioMusic API
+## JioMusic API [Deprecated]
 
 
 ### Show some :heart: and :star: the repo to support the project
