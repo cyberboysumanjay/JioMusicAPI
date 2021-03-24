@@ -16,13 +16,13 @@
 
 #### Features:
 ##### Currently the API can get the following details for a specific song in JSON format:
-- **Song Name**
-- **Singer Name**
-- **Album Name**
-- **Song Thumbnail URL (Max Resolution)**
-- **Streamable Link (320Kbps)**
-- **Album Art Link (Max Resolution)**
-- .... and much more!
+* **Song Name**
+* **Singer Name**
+* **Album Name**
+* **Song Thumbnail URL (Max Resolution)**
+* **Streamable Link (320Kbps)**
+* **Album Art Link (Max Resolution)**
+* .... and much more!
 
 ```json
 {
