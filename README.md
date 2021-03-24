@@ -64,7 +64,7 @@ http://127.0.0.1:5000/result/?query=<insert-song-or-playlist-or-album-name-here>
 **Example:** Navigate to http://127.0.0.1:5000/result/?query=slow%20motion to get a json response of song data in return.
 **Live Example:** Navigate to https://jiomusic.herokuapp.com/result/?query=slow%20motion and see yourself! (Maybe Slow, Thanks to Heroku!)
 ### You can fork the repo and deploy on VPS or deploy it on Heroku :)  
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cyberboysumanjay/JioMusicAPI/tree/master)
+[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/cyberboysumanjay/JioMusicAPI/tree/master)
 
 
 #### Star the Repo in case you liked it :)
